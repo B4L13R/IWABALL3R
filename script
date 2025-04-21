@@ -2,106 +2,53 @@ local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/jen
 
 local Window = OrionLib:MakeWindow({Name = "BALL3RHUB", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
 
---[[
-Name = <string> - The name of the UI.
-HidePremium = <bool> - Whether or not the user details shows Premium status or not.
-SaveConfig = <bool> - Toggles the config saving in the UI.
-ConfigFolder = <string> - The name of the folder where the configs are saved.
-IntroEnabled = <bool> - Whether or not to show the intro animation.
-IntroText = <string> - Text to show in the intro animation.
-IntroIcon = <string> - URL to the image you want to use in the intro animation.
-Icon = <string> - URL to the image you want displayed on the window.
-CloseCallback = <function> - Function to execute when the window is closed.
-]]
+local Tab = Window:MakeTab({ Name = "MURDERMYSTERY2", Icon = "rbxassetid://4483345998", PremiumOnly = false })
 
-local Tab = Window:MakeTab({
-	Name = "SCRIPTS",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
-})
+local Section = Tab:AddSection({ Name = "MurderMystery2 scripts" })
 
---[[
-Name = <string> - The name of the tab.
-Icon = <string> - The icon of the tab.
-PremiumOnly = <bool> - Makes the tab accessible to Sirus Premium users only.
-]]
+OrionLib:MakeNotification({ Name = "Welcome:)", Content = "Welcome to BALL3RHUB", Image = "rbxassetid://4483345998", Time = 5 })
 
-local Section = Tab:AddSection({
-	Name = "MurderMystery2 scripts"
-})
+Tab:AddButton({ Name = "HIGHLIGHTHUB_key hlvipcomingsoon(its a upper case i)", Callback = function() local startTime = tick() loadstring(game:HttpGet("https://raw.githubusercontent.com/ThatSick/HighlightMM2/main/Main"))() local loadTime = tick() - startTime OrionLib:MakeNotification({ Name = "Script Loaded!", Content = "Loaded in " .. string.format("%.2f", loadTime) .. " seconds.", Image = "rbxassetid://4483345998", Time = 5 }) end })
 
---[[
-Name = <string> - The name of the section.
-]]
+Tab:AddButton({ Name = "VynixuMM2", Callback = function() local startTime = tick() loadstring(game:HttpGet("https://raw.githubusercontent.com/Neon-Fox/roblox-scripts/main/VynixuMM2"))() local loadTime = tick() - startTime OrionLib:MakeNotification({ Name = "Script Loaded!", Content = "Loaded in " .. string.format("%.2f", loadTime) .. " seconds.", Image = "rbxassetid://4483345998", Time = 5 }) end })
 
-OrionLib:MakeNotification({
-	Name = "Welcome:)",
-	Content = "Welcome to BALL3RHUB",
-	Image = "rbxassetid://4483345998",
-	Time = 5
-})
+Tab:AddButton({ Name = "Xenny-Ware doesnt really work well", Callback = function() repeat wait() until game.Players.LocalPlayer.Character local startTime = tick() local url = "https://raw.githubusercontent.com/xennyy/Xenny-Ware/main/loader.lua" loadstring(game:HttpGet(url))() local loadTime = tick() - startTime OrionLib:MakeNotification({ Name = "Script Loaded!", Content = "Loaded in " .. string.format("%.2f", loadTime) .. " seconds.", Image = "rbxassetid://4483345998", Time = 5 }) end })
 
---[[
-Title = <string> - The title of the notification.
-Content = <string> - The content of the notification.
-Image = <string> - The icon of the notification.
-Time = <number> - The duration of the notfication.
-]]
+Tab:AddButton({ Name = "ECLIPSE", Callback = function() local startTime = tick() loadstring(game:HttpGet(('https://raw.githubusercontent.com/Lookatit7626/Project-R/main/ECLIPSEHUB.lua')))() local loadTime = tick() - startTime OrionLib:MakeNotification({ Name = "Script Loaded!", Content = "Loaded in " .. string.format("%.2f", loadTime) .. " seconds.", Image = "rbxassetid://4483345998", Time = 5 }) end })
+
+Tab:AddButton({ Name = "BALL3RHUBTROLL", Callback = function() local startTime = tick() loadstring(game:HttpGet("https://raw.githubusercontent.com/B4L13R/BALL3RMM2/refs/heads/main/script"))() local loadTime = tick() - startTime OrionLib:MakeNotification({ Name = "Script Loaded!", Content = "Loaded in " .. string.format("%.2f", loadTime) .. " seconds.", Image = "rbxassetid://4483345998", Time = 5 }) end })
+
+Tab:AddButton({ Name = "TORALSme", Callback = function() local startTime = tick() loadstring(game:HttpGet("https://raw.githubusercontent.com/ToraIsMe/ToraIsMe/main/0mm2", true))() local loadTime = tick() - startTime OrionLib:MakeNotification({ Name = "Script Loaded!", Content = "Loaded in " .. string.format("%.2f", loadTime) .. " seconds.", Image = "rbxassetid://4483345998", Time = 5 }) end })
+
+local Tab = Window:MakeTab({ Name = "DEAD RAIL", Icon = "rbxassetid://4483345998", PremiumOnly = false })
+
+local Section = Tab:AddSection({ Name = "DR scripts" })
+
+Tab:AddButton({ Name = "DR no key but lots of features", Callback = function() local startTime = tick() loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/e1cfd93b113a79773d93251b61af1e2f.lua"))() local loadTime = tick() - startTime OrionLib:MakeNotification({ Name = "Script Loaded!", Content = "Loaded in " .. string.format("%.2f", loadTime) .. " seconds.", Image = "rbxassetid://4483345998", Time = 5 }) end })
+
+Tab:AddButton({ Name = "Dead rails auto farm", Callback = function() local startTime = tick() loadstring(game:HttpGet("https://raw.githubusercontent.com/kiciahook/kiciahook/refs/heads/main/loader.lua"))() local loadTime = tick() - startTime OrionLib:MakeNotification({ Name = "Script Loaded!", Content = "Loaded in " .. string.format("%.2f", loadTime) .. " seconds.", Image = "rbxassetid://4483345998", Time = 5 }) end })
+
+Tab:AddButton({ Name = "solaria DR (has key)", Callback = function() local startTime = tick() loadstring(game:HttpGet("https://getsomber.com/loader.lua"))() local loadTime = tick() - startTime OrionLib:MakeNotification({ Name = "Script Loaded!", Content = "Loaded in " .. string.format("%.2f", loadTime) .. " seconds.", Image = "rbxassetid://4483345998", Time = 5 }) end })
+
+Tab:AddButton({ Name = "NULL FIRE/FIRE hub for Dr mobile", Callback = function() local startTime = tick() loadstring(game:HttpGet("https://raw.githubusercontent.com/InfernusScripts/Null-Fire/main/Loader"))() local loadTime = tick() - startTime OrionLib:MakeNotification({ Name = "Script Loaded!", Content = "Loaded in " .. string.format("%.2f", loadTime) .. " seconds.", Image = "rbxassetid://4483345998", Time = 5 }) end })
+
+Tab:AddButton({ Name = "Strelizia hub DR", Callback = function() local startTime = tick() loadstring(game:HttpGet('https://raw.githubusercontent.com/0vma/Strelizia/refs/heads/main/Standalone/DeadRails.lua', true))() local loadTime = tick() - startTime OrionLib:MakeNotification({ Name = "Script Loaded!", Content = "Loaded in " .. string.format("%.2f", loadTime) .. " seconds.", Image = "rbxassetid://4483345998", Time = 5 }) end })
+
+Tab:AddButton({ Name = "RBLXHUB DR", Callback = function() local startTime = tick() loadstring(game:HttpGet("https://raw.githubusercontent.com/diego987roher/RBLXHUB/refs/heads/main/DeadRailsScript", true))() local loadTime = tick() - startTime OrionLib:MakeNotification({ Name = "Script Loaded!", Content = "Loaded in " .. string.format("%.2f", loadTime) .. " seconds.", Image = "rbxassetid://4483345998", Time = 5 }) end })
 
 Tab:AddButton({
-	Name = "HIGHLIGHTHUB_key hlvipcomingsoon(its a upper case i)",
+	Name = "TbaoHub Dead Rails",
 	Callback = function()
-      	loadstring(game:HttpGet("https://raw.githubusercontent.com/ThatSick/HighlightMM2/main/Main"))()
-  	end    
-})
-
---[[
-Name = <string> - The name of the button.
-Callback = <function> - The function of the button.
-]]
-
-Tab:AddButton({
-	Name = "VynixuMM2",
-	Callback = function()
-      loadstring(game:HttpGet("https://raw.githubusercontent.com/Neon-Fox/roblox-scripts/main/VynixuMM2"))()
-  	end    
-})
-
---[[
-Name = <string> - The name of the button.
-Callback = <function> - The function of the button.
-]]
-
-Tab:AddButton({
-	Name = "Xenny-Ware doesnt really work well",
-	Callback = function()
-      repeat wait() until game.Players.LocalPlayer.Character
-
-url = "https://raw.githubusercontent.com/xennyy/Xenny-Ware/main/loader.lua"
-
-loadstring(game:HttpGet(url))()
-  	end    
-})
-
-Tab:AddButton({
-	Name = "ECLIPSE",
-	Callback = function()
-      loadstring(game:HttpGet(('https://raw.githubusercontent.com/Lookatit7626/Project-R/main/ECLIPSEHUB.lua')))()
-  	end    
-})
-
-Tab:AddButton({
-	Name = "BALL3RHUBTROLL",
-	Callback = function()
-     loadstring(game:HttpGet("https://raw.githubusercontent.com/B4L13R/BALL3RMM2/refs/heads/main/script"))()
-  	end    
-})
-
-Tab:AddButton({
-	Name = "TORALSme",
-	Callback = function()
-      loadstring(game:HttpGet("https://raw.githubusercontent.com/ToraIsMe/ToraIsMe/main/0mm2", true))()
-  	end    
+		local startTime = tick()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/tbao143/thaibao/refs/heads/main/TbaoHubDeadRails"))()
+		local loadTime = tick() - startTime
+		OrionLib:MakeNotification({
+			Name = "Script Loaded!",
+			Content = "Loaded in " .. string.format("%.2f", loadTime) .. " seconds.",
+			Image = "rbxassetid://4483345998",
+			Time = 5
+		})
+	end
 })
 
 OrionLib:Init()
