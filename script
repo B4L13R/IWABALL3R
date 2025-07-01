@@ -1,6 +1,6 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/jensonhirst/Orion/main/source')))()
 
-local Window = OrionLib:MakeWindow({Name = "BALL3RHUB", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+local Window = OrionLib:MakeWindow({Name = "BALL3RHUB", HidePremium = false, SaveConfig = true, ConfigFolder = "ConfigFolder"})
 
 local Tab = Window:MakeTab({ Name = "MURDERMYSTERY2", Icon = "rbxassetid://4483345998", PremiumOnly = false })
 
@@ -50,5 +50,13 @@ Tab:AddButton({
 		})
 	end
 })
+
+local Tab = Window:MakeTab({ Name = "MAKE YOUR OWN", Icon = "rbxassetid://4483345998", PremiumOnly = false })
+
+local Section = Tab:AddSection({ Name = "Make your own scripts" })
+
+Tab:AddButton({ Name = "SIMPLE SPY AND DEX EXPLORER", Callback = function() local startTime = tick() loadstring(game:HttpGet(https://github.com/B4L13R/BALL3RHUB/blob/main/BALL3RHUB%20script"))() local loadTime = tick() - startTime OrionLib:MakeNotification({ Name = "Script Loaded!", Content = "Loaded in " .. string.format("%.2f", loadTime) .. " seconds.", Image = "rbxassetid://4483345998", Time = 5 }) end })
+
+Tab:AddButton({ Name = "G0BBY helper which makes scripts for you. recomended", Callback = function() local startTime = tick() loadstring(game:HttpGet("https://pastebin.com/raw/3AtBrTAd"))() local loadTime = tick() - startTime OrionLib:MakeNotification({ Name = "Script Loaded!", Content = "Loaded in " .. string.format("%.2f", loadTime) .. " seconds.", Image = "rbxassetid://4483345998", Time = 5 }) end })
 
 OrionLib:Init()
