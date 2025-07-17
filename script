@@ -70,4 +70,16 @@ Tab3:CreateSection("Make your own scripts")
 CreateButton(Tab3, "SIMPLE SPY AND DEX EXPLORER", "https://raw.githubusercontent.com/B4L13R/BALL3RHUB/refs/heads/main/BALL3RHUB%20script")
 CreateButton(Tab3, "G0BBY helper which makes scripts for you. recomended", "https://pastebin.com/raw/3AtBrTAd")
 
+local Tab2 = Window:CreateTab("GROW A GARDEN", 4483345998)
+Tab2:CreateSection("GG scripts")
+
+CreateButton(Tab2, "BLACKHUB pet mutation(note that freezing is normal when first executed,  give it one or two mins)", "https://raw.githubusercontent.com/Skibidiking123/Fisch1/refs/heads/main/FischMain")
+
+CreateButton(Tab2, "The best free grow a garden script KEYSYSTEM", "https://api.luarmor.net/files/v3/loaders/b44706178039e9b88c4d768d4d8b012f.lua")
+
+CreateButton(Tab2, "Lumin hub KEYSYSTEM(heaps of features)",
+ "https://lumin-hub.lol/loader.lua")
+
+CreateButton(Tab2, "Neox hub KEYSYSTEM", "https://raw.githubusercontent.com/hassanxzayn-lua/NEOXHUBMAIN/refs/heads/main/loader")
+
 Rayfield:LoadConfiguration()
