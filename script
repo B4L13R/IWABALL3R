@@ -48,7 +48,7 @@ CreateButton(Tab1, "HIGHLIGHTHUB_key hlvipcomingsoon(its a upper case i)", "http
 CreateButton(Tab1, "VynixuMM2", "https://raw.githubusercontent.com/Neon-Fox/roblox-scripts/main/VynixuMM2")
 CreateButton(Tab1, "Xenny-Ware doesnt really work well", "https://raw.githubusercontent.com/xennyy/Xenny-Ware/main/loader.lua")
 CreateButton(Tab1, "ECLIPSE", "https://raw.githubusercontent.com/Lookatit7626/Project-R/main/ECLIPSEHUB.lua")
-CreateButton(Tab1, "UPD ball3rmm2", "https://raw.githubusercontent.com/B4L13R/BALL3R/refs/heads/main/script")
+CreateButton(Tab1, "FIXED ball3rmm2", "https://raw.githubusercontent.com/B4L13R/BALL3R/refs/heads/main/script")
 CreateButton(Tab1, "TORALSme", "https://raw.githubusercontent.com/ToraIsMe/ToraIsMe/main/0mm2")
 
 -- DEAD RAIL
